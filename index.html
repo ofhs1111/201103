@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>izsop 이즈솝</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gilda+Display&family=Lora:wght@400;500;600;700&family=Noto+Sans+KR:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+	
+
+	<style type="text/css">
+		
+		html {height: 100%;
+    	scroll-behavior: smooth;
+      font-family: 'Noto Sans KR', sans-serif;}
+		a{font-family: 'Noto Sans KR', sans-serif;color:none; text-decoration: none; color: white;}
+		p{font-size: 1rem, font-weight:300;word-break:keep-all;}
+		h1{font-size:1.4rem;}
+
+		body{margin:0;padding: 0;background-color: #ffffe7;}
+		nav{height: 60px; background: black; margin-bottom: 0px;}
+
+        .row{width: 1500px; margin: 0px auto; /*background: gray;*/
+			padding: 20px 5px; box-sizing: border-box; display: flex;}
+		header .row{width: 1000px; margin: 0 auto; /*background: gray;*/
+			padding: 20px 5px; box-sizing: border-box; display: flex;}
+		header{/*background: yellow;*/ padding: 10px 50px;}
+		
+		li{display: inline-block; width:100px; text-align: center; float: right;}
+		ul{width:600px; height:40px; position: absolute; right:30px; padding:0; margin-right:
+			0px;
+			}
+		
+	      footer{margin-top: 200px; background: black; color: white; font-size: 0.7rem; padding: 80px 180px; height: 350px; text-align: center; display: flex; align-content: center;}
+	     hr{border: 1px solid black; margin-top: 80px;}
+
+	    .row .col-1{width: 100%;margin:5px ; /*background: blue;*/}
+		.row .col-2{width: 50%;margin:5px; /*background: blue;*/}
+		.row .col-21{height: 50%; margin:5px; /*background: orange;*/}
+		.row .col-3{width: 30%;margin:40px;/*background: blue*/; text-align: center;word-break: justify;}
+		.row .col-6{width: 15%; margin:10px;/*background: blue;*/ text-align: center;
+		}
+
+		.row .col-40{width: 40%;/*background: blue;*/margin:5px; text-align: right;}
+		.row .col-60{width: 60%;/*background: red;*/margin:5px;text-align: left;}
+		.col-1ast{width: 100%;margin:5px ; padding: 60px 160px;}
+		.col-footer{width:30%; margin: 20px; text-align: left;}
+
+		
+		.logo{height:44px; line-height: 80px; width:200px;
+	    	float:left; margin-left: 50px;}
+	     .ulfloatright{position: absolute; right:30px;}
+
+	     .button{width: 100%; height:200px; border:none;text-decoration: none; cursor: pointer;transition-duration: 0.6s; font-weight: 700; padding: 5px;}
+	     .button .count{display: inline-block; font-size: 1rem; color: white; background: black; margin-right: 10px;outline:0px; text-align: center;border: none;
+	     	margin-top: 20px;}
+	     .button .one{display: inline-block; font-size: 1rem; color: black; background: none;margin-right: 30px; width:200px;outline:0px;text-align: center;border: none;
+	    margin-top: 30px; }
+	     .button .cart{width:100%; height: 50px; font-size: 1rem; line-height: 40px; 
+	     	text-align: center; color: black; background: none; border: 2px solid black; display: block;
+	     	margin-top: 20px;
+	     font-family: 'Noto Sans KR', sans-serif;border-radius: 30px;}
+
+	     .button .purchase{width:100%; height: 50px; font-size: 1rem; line-height: 40px; 
+	     	text-align: center; color: black; background: none; border: 2px solid black; display: block; border-radius: 30px;
+	     	margin-top: 10px; font-family: 'Noto Sans KR', sans-serif;}
+	     	.button .purchase:hover {background-color: black; color: white;border-radius: 30px;}
+
+	     	.맨위로{ margin-top: 50px; margin-bottom: 300px;background-color: black; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1.3rem;
+font-family: 'Noto Sans KR', sans-serif;border-radius: 10px;}
+
+
+	     	.main-image {
+  background-image: url("main.jpg");
+  
+  height: 700px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: center;
+  padding: 30px 0px;
+ 
+
+}
+             .maintext{font-family: 'Lora', serif; font-size: 10rem; text-align: center; color:#ffffe7;}
+             .main-explain{font-size: 2rem; text-align: center; color:#ffffe7; margin-top: -80px; font-weight: 400;}
+             .triple{font-family: 'Lora', serif; font-size: 2rem;}
+             .triple-explain{text-align: left;}
+
+
+             .package-image{background-image: url("packagephoto.jpg"); height: 700px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: left;
+
+             }
+
+             .washinghands{ background-image: url("washinghands.gif");
+             height:650px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  text-align: right; }
+
+            .sunshine-image{background-image: url("sunshine.gif"); height:700px; text-align: center;  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;}
+
+             .detail{width: 500px; height: 100px; font-size: 2rem; text-align: left;
+             	font-family: 'Lora', serif; color: black; margin-left: 40px;}
+
+
+             .row .series-container{width: 1500px; margin: 0px auto; /background: gray;
+			padding: 20px 5px; box-sizing: border-box; display: flex; text-align: center;
+			margin-left: 30px;}
+			.row .col-final{width:800px; margin:0px 350px; text-align: center;}
+			.row .left{width: 40%; float:left; margin: 10% 4%; text-align: left;font-family: 'Noto Sans KR', sans-serif; font-size:1.2rem; font-weight: 500;color: #ffffe7}
+
+			.circle-1 {
+  height: 100px;
+  width: 100px;
+  background-color: #d7d6aa;
+  border-radius: 50%;
+  margin-left: 65px;}
+  .circle-2 {
+  height: 100px;
+  width: 100px;
+  background-color: #f9e9a7;
+  border-radius: 50%;
+  margin-left: 65px;}
+  .circle-3 {
+  height: 100px;
+  width: 100px;
+  background-color: #67898c;
+  border-radius: 50%;
+  margin-left: 65px;}
+  .circle-4 {
+  height: 100px;
+  width: 100px;
+  background-color: #a5a076;
+  border-radius: 50%;
+  margin-left: 65px;}
+  .circle-5 {
+  height: 100px;
+  width: 100px;
+  background-color: #9fad77;
+  border-radius: 50%;
+  margin-left: 65px;}
+  .circle-6 {
+  height: 100px;
+  width: 100px;
+  background-color: #e2d8a1;
+  border-radius: 50%;
+  margin-left: 65px;}
+			
+	</style>
+</head>
+<body>
+	<nav>
+		<div class="logo">
+			<img src="izsoplogo.png" height="30">
+		</div>
+
+		<ul>
+			<li>
+				<a href="">cart</a>
+			</li>
+			<li>
+				<a href="">shop</a>
+			</li>
+			<li>
+				<a href="">체험키트</a>
+			</li>
+		</ul>
+	</nav>
+
+
+
+	<header>
+		<div class="row">
+			<div class="col-2">
+				<img src="product.png" width="500px" style="margin-top: 20px;">
+			</div>
+			<div class="col-2">
+				<div class="col-21">
+				<h1 style="margin-top: 30px;">샴푸바 6종 체험키트</h1>
+				<p style="margin-top: -10px;">25g / 6개</p>
+				<br>
+
+				<h2 style="font-weight: 600; font-size: 1.1rem;">KRW 18000</h2>
+				<p style="color: gray;">샴푸바를 처음 사용하는 분들을 위한 체험키트입니다. 자신의 두피 타입에 맞는 샴푸바를 체험할 수 있으며 샴푸/세안/바디 all-in-one으로 사용할 수 있습니다.</p>
+				</div>
+
+				<div class="col-21">
+				<div class="button">
+					<button class="count">-</button>
+					<button class="one">1</button>
+					<button class="count">+</button>
+					<button class="cart">장바구니</button>
+					<button class="purchase">구매하기</button>
+				</div>
+                
+				</div>
+
+			</div>
+		</div>
+	</header>
+    
+    <section>
+		<div class="row">
+			<div class="col-1">
+				<div class="main-image">
+					<h1 class="maintext">Start Eco-Life!</h1>
+					<p class="main-explain">환경에도 착하고 내 몸에도 착한 샴푸바, 지금 사용해보세요!</p>
+				</div>
+		    </div>
+		</div>
+		</div>
+	</section>
+
+    <section>
+		<div class="row">
+			<div class="col-3">
+				<img src="zero.png">
+				<h3 class="triple">Zero-Plastic</h3>
+				<p class="triple-explain">이즈솝은 환경을 생각합니다. 이즈솝 샴푸바는 플라스틱 용기를 사용하지 않으며 샴푸바 90g에는 액체 샴푸 250ml가 농축되어 있어 소량만 사용하더라도 두피를 상쾌하게 세척할 수 있습니다. 사용감은 편리하고 플라스틱 쓰레기는 줄이는 이즈솝 샴푸바로 친환경 라이프를 실천해보세요.</p>
+
+			</div>
+			<div class="col-3">
+				<img src="kind.png">
+				<h3 class="triple">Kind</h3>
+				<p class="triple-explain">이즈솝 샴푸바는 자연유래성분과 유기농 아로마오일 및 추출물을 사용해 피부에 자극을 주지 않아 민감성 피부에도 사용하실 수 있습니다.</p>
+				
+			</div>
+			<div class="col-3">
+				<img src="mytype.png">
+				<h3 class="triple">My Type</h3>
+				<p class="triple-explain">이즈솝은 여러가지 재료와 함께 다양한 두피 타입에 맞는 샴푸바를 핸드메이드로 제작합니다. 향긋한 편백부터 시원한 멘톨까지 여러가지 향과 재료를 만나볼 수 있으며 건성, 지성, 중복합 피부 등 다양한 타입의 샴푸바를 체험해보고 나와 가장 잘 맞는 것을 찾아 두피와 모발을 건강하게 가꿀 수 있습니다.</p>
+				
+			</div>	
+		</div>
+	</section>
+
+	<section>
+		<div class="row">
+			<div class="col-1">
+				<img src="list.png" style="width:100%;">
+			</div>
+		</div>
+	</section>
+	<section>
+		<div class="row">
+			<div class="series-container">
+			<div class="col-6">
+				<div class="circle-1"></div>
+				<h3>①편백, 소루쟁이</h3>
+                <p>일반~지성</p>
+                <p>편백, 소루쟁이 파우더, 라벤더, 스피아민트, 페퍼민트 유기농 에센셜오일</p>
+			</div>
+
+			<div class="col-6">
+				<div class="circle-2"></div>
+				<h3>②레몬</h3>
+                <p>중복합~지성 </p>
+                <p>레몬, 오렌지, 버가못</p>
+			</div>
+
+			<div class="col-6">
+				<div class="circle-3"></div>
+				<h3>③멘톨</h3>
+                <p>일반~지성</p>
+                <p>발효청대, 멘톨, 스피아민트</p>
+			</div>
+
+			<div class="col-6">
+				<div class="circle-4"></div>
+				<h3>④어성초</h3>
+                <p>건성~일반</p>
+                <p>어성초파우더, 녹차파우더, 자소엽파우더</p>
+			</div>
+
+			<div class="col-6">
+				<div class="circle-5"></div>
+				<h3>⑤솔잎</h3>
+                <p>일반~지성</p>
+                <p>솔잎, 클로렐라, 파인</p>
+			</div>
+
+			<div class="col-6">
+				<div class="circle-6"></div>
+				<h3>⑥맥주효모</h3>
+                <p>건성~일반</p>
+                <p>맥주효모, 스윗오렌지, 메이창</p>
+			</div>
+		</div>
+	</div>
+</div>
+	</section>
+
+	<section>
+		<div class="row">
+			<div class="col-1">
+			
+			</div>
+		</div>
+	</section>
+
+	<section>
+		<div class="row">
+			<div class="col-1">
+
+			<div class="package-image">
+				<div class="left">
+				<h1 style="font-family: 'Lora', serif; font-size: 2.5rem;">Package</h1>
+				<p>이즈솝 샴푸바 체험키트은 6종의 샴푸바와 비누 설명서, 이즈솝 카드와 비누망을 제공하고 있습니다. 또한 플라스틱 사용을 줄이기 위해 종이 포장지를 사용하고 있습니다.</p>
+			</div>
+			</div>
+			</div>
+		</div>
+		</div>
+	</section>
+	<section>
+		<div class="row">
+			<div class="detail"> <h3>Detail</h3></div>
+		</div>
+	</section>
+	
+	<section>
+		<div class="row">
+	 <div class="col-40">
+	 	<img src="detail1.jpg" style="width: 400px;">
+	 	
+	 </div>
+	 <div class="col-60">
+	 	
+	 </div>
+	</div>
+	</section>
+	<section>
+		<div class="row">
+	 <div class="col-40">
+	 	
+	 </div>
+	 <div class="col-60">
+	 	<img src="detail2.jpg"style="width: 650px; margin-top: -150px; margin-left: 40px;">
+	 </div>
+	</div>
+	</section>
+	<section>
+		<div class="row">
+	 <div class="col-40">
+	 	
+	 	<img src="detail3.jpg" style="width: 400px;margin-top: -150px;">
+	 </div>
+	 <div class="col-60">
+	 	
+	 </div>
+	</div>
+	</section>
+
+	<section>
+		<div class="row">
+	 <div class="col-1">
+	 	<div class="washinghands">
+	 		<div class="left">
+	 	<h1 style="font-family: 'Lora', serif; font-size: 2.5rem;">Smooth Cleansing.</h1>
+		<p>이즈솝의 샴푸바는 일반비누와 다르게 모발이 뻣뻣해지지 않습니다. 풍성한 거품과 부드러운 사용감. 말끔한 세정력을 가진 이즈솝 샴푸바로 두피를 상쾌하게 관리하세요.</p>
+	</div>
+	</div>
+	</div>
+	</section>
+
+	
+		<div class="row">
+	 <div class="col-final">
+	 	<h2 style="margin-top: 80px;">이즈솝 샴푸바 체험키트로 환경을 보호하고, 나와 맞는 샴푸바를 찾아보세요!</h2>
+	 		<button class="맨위로">사용해보기</button>
+	 	</div>
+	</div>
+</div>
+	</section>
+
+<section>
+		<div class="row">
+	 <div class="col-1">
+	 	<div class="sunshine-image">
+	 		<img src="asset.png" style="text-align: center; width: 400px; margin-top: 250px;">
+	 	</div>
+	 	
+	</div>
+	</div>
+	</section>
+
+	<section>
+		<div class="row">
+	 <div class="col-1ast">
+	 	<hr>
+	 	<h2>Product Information</h2>
+	 	<hr>
+	 	<h2>Ingredients</h2>
+	 	<hr>
+	 	<h2>Review</h2>
+	 	
+	</div>
+</div>
+	</section>
+
+</body>
+<footer>
+	<div class="col-footer">
+		<img src="izsoplogo.png" style="width: 100; margin-left: -20px;">
+		
+	</div>
+	<div class="col-footer" style="margin-left: 600px;">
+		<p>COMPANY: 이즈솝</p>
+		<p>웹디자인: 양희수18100874</p>
+		<p>주소: 서울특별시 노원구 공릉동</p>
+	</div>
+	<div class="col-footer">
+		<p>Copyright 2020. All rights reserved.</p>
+	</div>
+	
+</footer>
+</html>
